@@ -1,0 +1,37 @@
+  <Object type = "0x6200" id="???" whitebag="UT">  // At the start always but <Object type = "0x???? <-- put 4 numbers here such as 6000 or 7000. for the id put "Name of item" then put bad type superbag, blackbag, whitebag or cyanbag and beside it put the tier bagtype="tier"
+        <Class>Equipment</Class> // always leave this equipment if you are making a item
+        <Item/>
+        <Texture>                  // set index and file to ???. dev changes these once he adds the item sprite into the .swf
+            <File> ??? </File>
+            <Index> ??? </Index>
+        </Texture>
+        <SlotType> ??? </SlotType>        // http://www.mpgh.net/forum/showthread.php?t=906412 that link shows all slot types.
+        <Description> ??? </Description>   // Desctiption. u know what that is :l
+        <RateOfFire>1</RateOfFire>       // Rate of fire is how fast the weapon shoots. 1 = 100% 2 = 200% etc
+        <Sound> ??? </Sound>  // sound the item makes when shot, thats if i does shoot. if it dosnt just delete it. a basic sword shoot sound is weapon/glass_sword
+        <Projectile>                         // here you edit the projectile. how fast the projectile travles, damage etc
+            <ObjectId> ??? </ObjectId>   // this is what the projectile looks like. go http://pfiffel.com/dps/ to see all projectile ids
+            <Speed> ??? </Speed>                  // how fast projectile moves
+            <MinDamage> ??? </MinDamage>          // minium damage the item can do
+            <MaxDamage> ??? </MaxDamage>          //max amount the item can do
+            <LifetimeMS> ??? </LifetimeMS>        // how long the projectile will last for
+        </Projectile>                            
+        <ExtraTooltipData>                // if the item is a buffed version put this here. effectinfo name= "black/super bag item" description= "explain stuff here". if its not just delete the extra tooltip data
+            <EffectInfo name = " ??? " description= " ??? " />
+            < EffectInfo name= " ??? " description= " ??? " />
+        </ ExtraTooltipData >
+        <ActivateOnEquip stat = "??" amount="???">IncrementStat</ActivateOnEquip> // here is where you put what stat boosts the item gives u when equipped.
+        < BagType > ?? </ BagType >         // what bag the items drops in. i don't know the exact bag types but i believe its 8 blue, 9 cyan, 10 white, 11 black, 12 rainbow
+        < FameBonus > 1 </ FameBonus >      // u know this
+        < NumProjectiles > ?? </ NumProjectiles > // how many projectiles it will shoot out. delete if item does not shoot out a projectile
+        < ArcGap > ?? </ ArcGap >                // the gap between shots. again go to http://pfiffel.com/dps/ to test out arc gaps in the weapon creator
+        < OldSound > ?? </ OldSound >    // tbh no clue. i believe its the name of the shot sound :l i would just leave it at bladeSwing
+        < feedPower > ?? </ feedPower >        // u know this
+        < Soulbound />                           // for anything Ut Lt Srt keep this
+        < DisplayId > ??? </DisplayId> // what the item will be called in game
+    </Object>                          // at the end of all the code for the item always close it wil </object>
+
+    // In projectile you can also add <Boomerang/> to make the projectile return to you ( like a boomerang :D )
+    // Stat ID --- Atk 20, Def 21, Wis 27, Vit 26, Dex 28, Spd 22, Mana 3, Hp 0
+    // Bag ID --- 8 blue, 9 cyan, 10 white, 11 black, 12 rainbow
+    // If you need to know more pm me.
