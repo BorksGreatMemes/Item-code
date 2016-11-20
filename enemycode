@@ -520,21 +520,49 @@ namespace wServer.logic
             
             
             
+         
             
             
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+      <Object type="0x0917" id="Stheno the Snake Queen">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x33</Index>
+      </Texture>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>7500</MaxHitPoints>
+      <Defense>19</Defense>
+      <Enemy/>
+      <God/>
+      <StasisImmune/>
+      <Quest/>
+      <Level>1</Level>
+      <XpMult>0.7</XpMult>
+      <NoArticle/>
+      <Projectile id="0">
+         <ObjectId>Blade</ObjectId>
+         <Speed>70</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>62</Speed>
+         <Damage>60</Damage>
+         <Size>60</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="1.4">Blind</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <DisplayId>{snakePit.Stheno_the_Snake_Queen}</DisplayId>
+   </Object>
             
             
             
