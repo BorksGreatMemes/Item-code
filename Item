@@ -1,4 +1,4 @@
-  <Object type = "0x6200" id="???" whitebag="UT">  // At the start always but <Object type = "0x???? <-- put 4 numbers here such as 6000 or 7000. for the id put "Name of item" then put bad type superbag, blackbag, whitebag or cyanbag and beside it put the tier bagtype="tier"
+  <Object type = "0x6200" id="???">  // At the start always but <Object type = "0x???? <-- put 4 numbers here such as 6000 or 7000. for the id put "Name of item"
         <Class>Equipment</Class> // always leave this equipment if you are making a item
         <Item/>
         <Texture>                  // set index and file to ???. dev changes these once he adds the item sprite into the .swf
@@ -15,11 +15,7 @@
             <MinDamage> ??? </MinDamage>          // minium damage the item can do
             <MaxDamage> ??? </MaxDamage>          //max amount the item can do
             <LifetimeMS> ??? </LifetimeMS>        // how long the projectile will last for
-        </Projectile>                            
-        <ExtraTooltipData>                // if the item is a buffed version put this here. effectinfo name= "black/super bag item" description= "explain stuff here". if its not just delete the extra tooltip data
-            <EffectInfo name = " ??? " description= " ??? " />
-            < EffectInfo name= " ??? " description= " ??? " />
-        </ ExtraTooltipData >
+        </Projectile>                           
         <ActivateOnEquip stat = "??" amount="???">IncrementStat</ActivateOnEquip> // here is where you put what stat boosts the item gives u when equipped.
         < BagType > ?? </ BagType >         // what bag the items drops in. i don't know the exact bag types but i believe its 8 blue, 9 cyan, 10 white, 11 black, 12 rainbow
         < FameBonus > 1 </ FameBonus >      // u know this
